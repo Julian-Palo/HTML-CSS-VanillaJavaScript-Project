@@ -4,6 +4,8 @@ Type anything next to the submit button and press submit to add an item.
 
 Type anything in the search bar that would match a symbol of the item your looking for.
 
+You can also delete any item you want 
+
 
 I will be updating this repository to implement
 the CSS and HTML of my previous project, the Little Taco Shop
