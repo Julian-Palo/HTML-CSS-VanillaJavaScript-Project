@@ -1,4 +1,4 @@
-Welcome to my third web development project. The project demonstrates how I utilize query selectors with HTML.
+Welcome to my third web development project. The project demonstrates how I utilize query selectors and events in javascript.
 
 Type anything next to the submit button and press submit to add an item.
 
