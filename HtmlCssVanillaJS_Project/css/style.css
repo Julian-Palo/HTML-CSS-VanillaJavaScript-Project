@@ -83,7 +83,6 @@ caption {
   padding: 0.5rem;
 }
 
-/*style up the menu*/
 #menu table {
   background-color: rgb(170, 121, 30);
   width: 100%;
@@ -96,6 +95,29 @@ caption {
 #menu th,
 td {
   background-color: rgb(199, 146, 48);
+}
+
+/* Contact form styling (refined with gemini)*/
+
+.button-group {
+  display: flex;
+  justify-content: center; /* This centers the buttons horizontally */
+  gap: 1rem; /* Adds space between the Submit and Reset buttons */
+  margin-top: 1rem;
+}
+
+.form-control {
+  width: 100%; /* Fixed the invalid min() function */
+  padding: 1rem;
+  margin-top: 0.5rem; /* Replaced the 1rem all-around margin to keep it aligned with the label */
+  box-sizing: border-box; /* Ensures padding doesn't push the width past 100% */
+}
+
+.message-form-btn {
+  width: 50%; /* Fixed the invalid min() function */
+  max-width: 200px; /* Optional: prevents the buttons from getting too massive on large screens */
+  padding: 0.5rem 1rem; /* Better padding for buttons */
+  cursor: pointer;
 }
 
 /*Add a curry button in HTML and style it with 
@@ -131,8 +153,8 @@ shadows in css, as well as position it!*/
 
 .hours-header {
   width: min(100%);
-  background-color: #472400;
-  background-image: linear-gradient(to bottom, #472400, #683c0c);
+  background-color: #801a00;
+  background-image: linear-gradient(to bottom, #801a00, #683c0c);
   border-radius: 2rem 2rem 0 0;
   padding: 1rem;
   margin: 1rem 0 0 0;
@@ -143,8 +165,8 @@ shadows in css, as well as position it!*/
 
 dl {
   width: min(100%);
-  background-color: #0077ff;
-  background-image: linear-gradient(to bottom, #0077ff, #2f00ff);
+  background-color: #c79230;
+  background-image: linear-gradient(to bottom, #c79230, #956c21);
   border-radius: 0 0 2rem 2rem;
   padding: 1rem;
   margin: 0 0 1rem 0;

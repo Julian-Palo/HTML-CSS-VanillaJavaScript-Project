@@ -18,7 +18,7 @@
       <nav aria-label="primary-navigation">
         <ul>
           <li>
-            <a href="/index.html">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li>
             <a href="index.html#about">About LTS</a>
@@ -27,7 +27,7 @@
             <a href="index.html#menu">Our Menu</a>
           </li>
           <li>
-            <a href="/hours.html">Store Hours</a>
+            <a href="hours.html">Store Hours</a>
           </li>
         </ul>
       </nav>
@@ -46,16 +46,10 @@
       <article id="contact">
         <h2>Our Contact Form</h2>
 
-        <form action="https://httpbin.org/get" method="get">
+        <form id="message-form" action="https://httpbin.org/get" method="get">
           <fieldset>
-            <legend>Send Us A Message</legend>
-            <!--we wrap the label inputs in paragraphs to space them out instead of wrapping against each other-->
-            <p>
+            <div class="mb-3">
               <label for="firstName">Name:</label>
-              <!--autofocus highlights the box to let the user text in it as soon as the page loads.
-          
-          It's usually not a good element to put in if your contact me is at the bottom of your page, just be aware of that.we're doing it to show you how it works-->
-
               <input
                 type="text"
                 name="Name"
@@ -64,9 +58,11 @@
                 autocomplete="on"
                 required
                 autofocus
+                class="form-control"
               />
-            </p>
-            <p>
+            </div>
+
+            <div class="mb-3">
               <label for="email">Email:</label>
               <input
                 type="email"
@@ -75,22 +71,26 @@
                 placeholder="janedoe@gmail.com"
                 autocomplete="on"
                 required
+                class="form-control"
               />
-            </p>
+            </div>
 
-            <label for="message">Your Message:</label>
-            <br />
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Type your message"
-            ></textarea>
+            <div class="mb-3">
+              <label for="message">Message: </label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Type your message"
+                class="form-control"
+              ></textarea>
+            </div>
           </fieldset>
-          <button type="submit">Submit</button>
 
-          <button type="reset">Reset</button>
+          <!-- Wrap the buttons in a div to control their layout -->
+          <div class="button-group">
+            <button type="submit" class="message-form-btn">Submit</button>
+            <button type="reset" class="message-form-btn">Reset</button>
+          </div>
         </form>
       </article>
 
@@ -114,4 +114,30 @@
       </p>
     </main>
   </body>
+  <section class="break">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </section>
 </html>
