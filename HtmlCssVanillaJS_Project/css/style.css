@@ -1,66 +1,265 @@
+/*CSS RESET*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*IMG RESET*/
+img {
+  margin: 2rem 2rem 2rem 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Body Styling*/
 body {
-  font-family: sans-serif;
-}
-
-.container {
-  padding: 0px 25px;
-}
-
-/*-------- HEADER --------*/
-#main-header {
-  background-color: rgb(0, 126, 0);
-  height: 70px;
+  font-size: 22px;
+  color: rgb(231, 231, 231);
+  min-height: 100vh;
+  max-width: 800px;
+  background-image: radial-gradient(whitesmoke, #910a00);
+  /*centers our body*/
+  margin: 0 auto;
+  padding: 0;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  /*for stylized boxes*/
   display: flex;
+  flex-direction: column;
+}
+
+figure,
+figure figcaption {
+  display: block;
+  margin: auto;
+  width: 50%;
+  white-space: nowrap;
+}
+
+nav li {
+  width: min(100%);
+  background-image: linear-gradient(to bottom, #919191, #e6e6e6);
+  margin: 1rem;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 20px;
 }
 
-#header-title {
-  color: white;
-  font-size: 40px;
+/**/
+main,
+.break {
+  height: 200%;
+  padding: 3rem;
+  width: min(100%);
+  background-color: #009607;
 }
 
-/*-------- MAIN CONTENT --------*/
-#main {
-  border: 1px solid rgb(180, 180, 180);
-  padding: 20px;
-  margin-top: 20px;
+h1,
+h2 {
+  width: min(100%);
+  background-color: #472400;
+  background-image: linear-gradient(to bottom, #472400, #683c0c);
+  border-radius: 15px;
+  margin: 2rem 2rem 2rem 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*Menu Styling*/
+th,
+td,
+caption {
+  border: 1px solid #333;
+  font-family: "Courier New", Courier, monospace;
+  border-collapse: separate;
+  padding: 0.5rem;
 }
 
-.title {
-  margin: 20px 0px;
-  font-size: 30px;
+/*style up the menu*/
+#menu table {
+  background-color: rgb(170, 121, 30);
+  width: 100%;
 }
 
-.title:first-child {
-  margin-top: 0px;
+#menu caption {
+  background-color: #801a00;
 }
 
-input {
-  height: 30px;
-  border: 1px solid rgb(180, 180, 180);
+#menu th,
+td {
+  background-color: rgb(199, 146, 48);
 }
 
-.btn {
-  background-color: rgb(39, 39, 39);
-  color: white;
-  width: 100px;
-  border: 0px;
+/*Add a curry button in HTML and style it with 
+shadows in css, as well as position it!*/
+
+.curry {
+  clip-path: ellipse(45% 60% at 50% 52%);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
   cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0;
+  position: fixed;
+  top: 30%;
+  right: 0;
 }
 
-.list-group-item {
-  border-bottom: 1px solid rgb(180, 180, 180);
-  list-style-type: none;
-  margin-bottom: 20px;
+.curry-button-border {
+  filter: drop-shadow(2px 0px 0px #000) drop-shadow(-2px 0px 0px #000)
+    drop-shadow(0px 2px 0px #000) drop-shadow(0px -2px 0px #000);
 }
 
-.list-group-item:last-child {
-  margin-bottom: 10px;
+.curry:hover .curry-button-border {
+  filter: drop-shadow(2px 0px 0px #000) drop-shadow(-2px 0px 0px #000)
+    drop-shadow(0px 2px 0px #000) drop-shadow(0px -2px 0px #000)
+    drop-shadow(0px 0px 12px #ffdd00);
+}
+
+/*hours chart styling*/
+
+.hours-header {
+  width: min(100%);
+  background-color: #472400;
+  background-image: linear-gradient(to bottom, #472400, #683c0c);
+  border-radius: 2rem 2rem 0 0;
+  padding: 1rem;
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+dl {
+  width: min(100%);
+  background-color: #0077ff;
+  background-image: linear-gradient(to bottom, #0077ff, #2f00ff);
+  border-radius: 0 0 2rem 2rem;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+  
+
+
+
+
+  MEDIA QUERIES*/
+
+/* || SMALL */
+@media screen and (min-width: 500px) {
+  .curry {
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: -65px;
+    bottom: -80px;
+
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+  }
+}
+
+/* ==================================================
+   MEDIUM
+   768px and wider
+   ================================================== */
+
+@media screen and (min-width: 768px) {
+  main,
+  .break {
+    padding: 3rem;
+  }
+
+  /* Change the navigation into a horizontal layout */
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    list-style-type: none;
+  }
+
+  nav li {
+    flex: 1 1 160px;
+    width: auto;
+    margin: 0;
+  }
+
+  .curry {
+    clip-path: ellipse(45% 60% at 50% 52%);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/* ==================================================
+   MOBILE LANDSCAPE
+   Short and wide screens
+   ================================================== */
+
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7 / 4) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  main,
+  .break {
+    padding: 1rem;
+  }
+
+  /* Keep Curry small and at the bottom in landscape */
+  .curry {
+    top: auto;
+    right: 0.25rem;
+    bottom: 0.25rem;
+    left: auto;
+  }
+
+  .curry img {
+    width: 90px;
+  }
+
+  nav li {
+    font-size: 1rem;
+  }
+
+  .curry {
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: -35px;
+    bottom: -50px;
+
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+  }
 }
