@@ -1,16 +1,8 @@
-Welcome to my third web development project. The project demonstrates how I utilize query selectors and events in javascript.
+Welcome to my third web development project. The project demonstrates how I utilize query selectors, events, and local storage in javascript
 
-Type anything next to the submit button and press submit to add an item.
+Click the green monster on the right to make a message pop up. 
 
-Type anything in the search bar that would match a symbol of the item your looking for.
+In the Contact Us page, you can type in some information and have it read back
 
-You can also delete any item you want 
-
-
-I will be updating this repository to implement
-the CSS and HTML of my previous project, the Little Taco Shop
-
-<img width="1708" height="567" alt="image" src="https://github.com/user-attachments/assets/1629d508-0f31-41d9-b540-11c5fd237575" />
-
-<img width="1681" height="750" alt="Screenshot 2026-08-11 094914" src="https://github.com/user-attachments/assets/fb9a04d9-42d0-4a9b-8142-ff32714ae281" />
-<img width="1591" height="749" alt="Screenshot 2026-08-11 094849" src="https://github.com/user-attachments/assets/85c9be66-61e5-4827-9eba-799d37f016f6" />
+<img width="1698" height="1000" alt="Screenshot 2026-08-13 185125" src="https://github.com/user-attachments/assets/ffe1a2e1-cbeb-4d49-99ee-a6c439f9f624" />
+<img width="1707" height="999" alt="Screenshot 2026-08-13 185152" src="https://github.com/user-attachments/assets/e21e6ca3-3a6c-4758-ae5a-142a6c5bf0ef" />
