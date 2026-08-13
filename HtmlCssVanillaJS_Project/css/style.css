@@ -124,7 +124,7 @@ td {
 shadows in css, as well as position it!*/
 
 .curry {
-  clip-path: ellipse(45% 60% at 50% 52%);
+  clip-path: ellipse(40% 20% at 45% 52%);
   background-color: rgba(0, 0, 0, 0);
   border: none;
   cursor: pointer;
@@ -247,7 +247,7 @@ dl {
   }
 
   .curry {
-    clip-path: ellipse(45% 60% at 50% 52%);
+    clip-path: ellipse(40% 20% at 45% 52%);
     background-color: rgba(0, 0, 0, 0);
     border: none;
     cursor: pointer;

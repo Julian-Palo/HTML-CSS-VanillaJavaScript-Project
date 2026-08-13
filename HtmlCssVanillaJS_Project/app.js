@@ -1,3 +1,9 @@
+//Gemini
+const curryBtn = document.getElementById("curry-btn");
+const curryUI = document.getElementById("curry-UI");
+
+const curryBox = document.createElement("div");
+
 //UI
 
 //TODO: Compare your course javascript projects
@@ -5,10 +11,7 @@
 class UI {
   static addCurryBox() {
     //Gemini
-    const curryBtn = document.getElementById("curry-btn");
-    const curryUI = document.getElementById("curry-UI");
 
-    const curryBox = document.createElement("div");
     curryBox.id = "curry-box";
     curryBox.textContent = "Would you like a taco?";
     curryBox.style.display = "none";
