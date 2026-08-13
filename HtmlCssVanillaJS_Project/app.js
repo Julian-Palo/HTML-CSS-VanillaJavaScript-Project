@@ -1,10 +1,9 @@
 //UI
 
-//TODO: right now, you have to double curry to get
-//the curry box. Compare your course javascript projects
-//and figure out how to use classes with your Gemini code
+//TODO: Compare your course javascript projects
+//and figure out how to use classes with program
 class UI {
-  static displayCurryBox() {
+  static addCurryBox() {
     //Gemini
     const curryBtn = document.getElementById("curry-btn");
     const curryUI = document.getElementById("curry-UI");
@@ -15,18 +14,33 @@ class UI {
     curryBox.style.display = "none";
 
     curryUI.appendChild(curryBox);
-
-    curryBtn.addEventListener("click", () => {
-      if (curryBox.style.display === "none") {
-        curryBox.style.display = "block";
-      } else {
-        curryBox.style.display = "none";
-      }
-    });
   }
 }
 
-// Events
+/* Events */
 document.querySelector("#curry-btn").addEventListener("click", (e) => {
-  UI.displayCurryBox();
+  // We use stopPropagation to prevent this click from instantly
+  // triggering the document click listener below.
+  //(suggested by Gemini)
+  e.stopPropagation();
+
+  UI.addCurryBox();
+
+  if (curryBox.style.display === "none") {
+    //displays curry message
+    curryBox.style.display = "block";
+  } else {
+    curryBox.style.display = "none";
+  }
+
+  //Julian
+  //
+  //This is to clear the box when pressed outside
+  document.addEventListener("click", (event) => {
+    if (curryBox.style.display === "block") {
+      if (!curryBox.contains(event.target)) {
+        curryBox.style.display = "none";
+      }
+    }
+  });
 });
